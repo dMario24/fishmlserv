@@ -1,5 +1,6 @@
 from typing import Union
 from fastapi import FastAPI
+import pickle
 
 app = FastAPI()
 
@@ -23,13 +24,18 @@ def fish(length: float, weight:float):
     Returns:
         dict: 물고기 종류를 담은 딕셔너리
     """
-    if length > 30.0:
-        prediction = "도미"
-    else:
-        prediction = "빙어"
+    ### 모델 불러오기
+    with open("/home/diginori/code/fishmlserv/note/model.pkl", "rb") as f:
+        fish_model = pickle.load(f)
+
+    prediction = fish_model.predict([[30.1, 600.123]])
+
+    fish_class = "빙어"
+    if prediction[0] == 1:
+        fish_class = "도미"
 
     return {
-                "prediction": prediction,
+                "prediction": fish_class,
                 "length": length, 
                 "weight": weight
             }
