@@ -1,4 +1,6 @@
 FROM python:3.11
+#FROM python:3.11.9-slim-bullseye
+#FROM python:3.11.9-alpine3.20
 
 WORKDIR /code
 
