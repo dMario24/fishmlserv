@@ -1,4 +1,5 @@
 # fishmlserv
 
 ### Deploy
-![deploy_image](https://github.com/user-attachments/assets/aa0556f8-1873-4adc-af03-69b0a1a69eb4)
+![image](https://github.com/user-attachments/assets/e3af6d93-78de-416d-bf0d-c1079d42a4ef)
+
