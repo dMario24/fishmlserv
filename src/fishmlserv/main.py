@@ -28,7 +28,7 @@ def fish(length: float, weight:float):
     with open("/home/diginori/code/fishmlserv/note/model.pkl", "rb") as f:
         fish_model = pickle.load(f)
 
-    prediction = fish_model.predict([[30.1, 600.123]])
+    prediction = fish_model.predict([[length, weight]])
 
     fish_class = "빙어"
     if prediction[0] == 1:
