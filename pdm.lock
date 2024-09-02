@@ -5,7 +5,7 @@
 groups = ["default", "note", "test"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:0b53aaf747987cddb6d62fb647b9f1287bb8a2333cd503d95904f5449fc46ba3"
+content_hash = "sha256:94b7da319d8005c0146502d8d39f6480bf92e244199053c7c290cde5d2b10b49"
 
 [[metadata.targets]]
 requires_python = "==3.11.*"
@@ -315,7 +315,7 @@ name = "contourpy"
 version = "1.3.0"
 requires_python = ">=3.9"
 summary = "Python library for calculating contours of 2D quadrilateral grids"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 dependencies = [
     "numpy>=1.23",
@@ -386,7 +386,7 @@ name = "cycler"
 version = "0.12.1"
 requires_python = ">=3.8"
 summary = "Composable style cycles"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "cycler-0.12.1-py3-none-any.whl", hash = "sha256:85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"},
@@ -478,7 +478,7 @@ name = "fonttools"
 version = "4.53.1"
 requires_python = ">=3.8"
 summary = "Tools to manipulate font files"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "fonttools-4.53.1-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:da33440b1413bad53a8674393c5d29ce64d8c1a15ef8a77c642ffd900d07bfe1"},
@@ -985,7 +985,7 @@ name = "kiwisolver"
 version = "1.4.5"
 requires_python = ">=3.7"
 summary = "A fast implementation of the Cassowary constraint solver"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 dependencies = [
     "typing-extensions; python_version < \"3.8\"",
@@ -1035,7 +1035,7 @@ name = "matplotlib"
 version = "3.9.2"
 requires_python = ">=3.9"
 summary = "Python plotting package"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 dependencies = [
     "contourpy>=1.0.1",
@@ -1203,7 +1203,7 @@ name = "numpy"
 version = "2.1.0"
 requires_python = ">=3.10"
 summary = "Fundamental package for array computing in Python"
-groups = ["default"]
+groups = ["default", "note"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "numpy-2.1.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:76368c788ccb4f4782cf9c842b316140142b4cbf22ff8db82724e82fe1205dce"},
@@ -1238,7 +1238,7 @@ name = "packaging"
 version = "24.1"
 requires_python = ">=3.8"
 summary = "Core utilities for Python packages"
-groups = ["default", "note", "test"]
+groups = ["note", "test"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "packaging-24.1-py3-none-any.whl", hash = "sha256:5b8f2217dbdbd2f7f384c41c628544e6d52f2d0f53c6d0c3ea61aa5d1d7ff124"},
@@ -1288,7 +1288,7 @@ name = "pillow"
 version = "10.4.0"
 requires_python = ">=3.8"
 summary = "Python Imaging Library (Fork)"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "pillow-10.4.0-cp311-cp311-macosx_10_10_x86_64.whl", hash = "sha256:0a9ec697746f268507404647e531e92889890a087e03681a3606d9b920fbee3c"},
@@ -1469,7 +1469,7 @@ name = "pyparsing"
 version = "3.1.4"
 requires_python = ">=3.6.8"
 summary = "pyparsing module - Classes and methods to define and execute parsing grammars"
-groups = ["default"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "pyparsing-3.1.4-py3-none-any.whl", hash = "sha256:a6a7ee4235a3f944aa1fa2249307708f893fe5717dc603503c6c7969c070fb7c"},
@@ -1517,7 +1517,7 @@ name = "python-dateutil"
 version = "2.9.0.post0"
 requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7"
 summary = "Extensions to the standard Python datetime module"
-groups = ["default", "note"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 dependencies = [
     "six>=1.5",
@@ -1779,7 +1779,7 @@ name = "six"
 version = "1.16.0"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 summary = "Python 2 and 3 compatibility utilities"
-groups = ["default", "note"]
+groups = ["note"]
 marker = "python_version == \"3.11\""
 files = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
