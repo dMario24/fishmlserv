@@ -23,6 +23,7 @@ $ sudo docker run -d --name fmlserv-040 -p 8877:8765 fishmlserv:0.4.0
 
 ### Fly.io
 ```
+$ fly launch --no-deploy
 $ flyctl launch --name mariofish
 $ flyctl scale memory 256
 $ flyctl deploy
