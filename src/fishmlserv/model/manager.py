@@ -1,3 +1,4 @@
+import os
 
 def get_model_path():
     # import os ...
@@ -7,4 +8,14 @@ def get_model_path():
 
     # 사용 fastapi main.py 에서 아래와 같이 사용
     # from fishmlserv.model.manager import get_model_path
-    return "living for today"
+    my_path = __file__
+    #print(my_path)
+    #/home/diginori/code/fishmlserv/src/fishmlserv/model/manager.py
+    
+    dir_name = os.path.dirname(my_path)
+    #/home/diginori/code/fishmlserv/src/fishmlserv/model
+
+    #model_path = dir_name + "/" + "model.pkl"
+    model_path = os.path.join(dir_name, "model.pkl")
+    
+    return model_path
