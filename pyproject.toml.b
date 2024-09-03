@@ -6,6 +6,9 @@ authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
 ]
 dependencies = [
+    "fastapi>=0.112.2",
+    "uvicorn[standard]>=0.30.6",
+    "scikit-learn>=1.5.1",
 ]
 requires-python = ">=3.8"
 readme = "README.md"

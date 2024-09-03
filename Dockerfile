@@ -1,4 +1,4 @@
-FROM python:3.11
+FROM datamario24/python311scikitlearn-fastapi:1.0.0
 
 WORKDIR /code
 
