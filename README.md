@@ -3,6 +3,9 @@
 ### Deploy
 ![image](https://github.com/user-attachments/assets/e3af6d93-78de-416d-bf0d-c1079d42a4ef)
 
+### Quick execution using Docker
+- https://hub.docker.com/r/datamario24/isdomi
+
 ### Run
 - dev
 - http://localhost:8000/docs
