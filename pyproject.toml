@@ -1,6 +1,6 @@
 [project]
 name = "fishmlserv"
-version = "0.8.1"
+version = "0.8.5"
 description = "Serving Machine Learning Model - using sklearn(KNeighborsClassifier) using FastApi, Fly.io"
 authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
