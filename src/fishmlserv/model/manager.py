@@ -1,12 +1,24 @@
 import os
 import pickle
 
+# 모델을 전역 변수로 캐시
+fish_model = None
+
 def get_model_path():
     my_path = __file__
     dir_name = os.path.dirname(my_path)
     model_path = os.path.join(dir_name, "model.pkl")
     
     return model_path
+
+def load_model():
+    global fish_model
+    if fish_model is None:
+        model_path = get_model_path()
+        with open(model_path, "rb") as f:
+            fish_model = pickle.load(f)
+    
+    return fish_model
 
 
 def run_prediction(l: float, w: float):
@@ -26,11 +38,8 @@ def run_prediction(l: float, w: float):
     3. 불러온 모델을 사용하여 주어진 길이와 무게에 대해 예측을 수행한다.
     4. 예측 결과에 따라 '도미' 또는 '빙어'를 반환한다.
     """
-    model_path = get_model_path()
-    with open(model_path, "rb") as f:
-        fish_model = pickle.load(f)
-
-    p = fish_model.predict([[l, w]])
+    m = load_model()
+    p = m.predict([[l, w]])
 
     if p[0] == 1:
         fish_class = "도미"
