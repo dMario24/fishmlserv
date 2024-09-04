@@ -48,6 +48,12 @@ root@7244097edb66:/code# exit
 # 로그 확인
 $ sudo docker logs -f <CONTAINER ID|NAMES>
 ```
+### LB
+```bash
+$ sudo docker build -t ml-lb:1.5.0 LB/
+
+$ sudo docker run --name ngix_lb-2 -d -p 8765:80 --link ml-1 --link ml-2 nginx_lb:1.5.0
+```
 
 ### Fly.io
 ```
