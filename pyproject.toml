@@ -6,6 +6,7 @@ authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
 ]
 dependencies = [
+    "requests>=2.32.3",
 ]
 requires-python = "==3.11.9"
 readme = "README.md"
