@@ -14,7 +14,7 @@ def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
 
 @app.get("/fish")
-def fish(length: float, weight:float):
+def fish(length: float, weight:float, k=5):
     """
     물고기의 종류 판별기
 
@@ -25,7 +25,7 @@ def fish(length: float, weight:float):
     Returns:
         dict: 물고기 종류를 담은 딕셔너리
     """
-    fish_class = run_prediction(length, weight)
+    fish_class = run_prediction(length, weight, k)
 
     return {
                 "prediction": fish_class,

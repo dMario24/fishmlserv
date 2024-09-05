@@ -1,6 +1,6 @@
 import requests
 
-def get(l, w, url="http://localhost:8765/fish"):
+def get(l, w, k, url="http://localhost:8000/fish"):
     headers = {
         'accept': 'application/json',
     }
@@ -8,6 +8,7 @@ def get(l, w, url="http://localhost:8765/fish"):
     params = {
         'length': l,
         'weight': w,
+        'k': k
     }
 
     response = requests.get(url, params=params, headers=headers)
