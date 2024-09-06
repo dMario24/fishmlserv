@@ -1,18 +1,43 @@
 [project]
 name = "fishmlserv"
-version = "0.1.0"
+version = "1.6.1"
 description = "Serving Machine Learning Model - using sklearn(KNeighborsClassifier) using FastApi, Fly.io"
 authors = [
     {name = "dMario24", email = "data.mario24@gmail.com"},
 ]
 dependencies = [
-    "fastapi>=0.112.2",
-    "uvicorn[standard]>=0.30.6",
+    "requests>=2.32.3",
+    "pandas>=2.2.2",
+    "tqdm>=4.66.5",
+    "pyarrow>=17.0.0",
 ]
-requires-python = "==3.11.*"
+requires-python = "==3.11.9"
 readme = "README.md"
 license = {text = "MIT"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
+
+[tool.pdm.dev-dependencies]
+note = [
+    "notebook>=7.2.2",
+    "matplotlib>=3.9.2",
+]
+test = [
+    "pytest>=8.3.2",
+    "pytest-cov>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "src"
+
+[project.urls]
+Homepage = "https://github.com/dMario24/fishmlserv"
+Issues = "https://github.com/dMario24/fishmlserv/issues"
+
+[project.scripts]
+ppping = 'fishmlserv.cli:ppping'
+get-model-path = 'fishmlserv.cli:model_path'
+pp = 'fishmlserv.cli:pp'
+ppp = 'fishmlserv.cli:ppp'
